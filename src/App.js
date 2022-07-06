@@ -1,28 +1,21 @@
-// import { BrowserRouter, Route, Routes } from "react-router-dom";
-import NavMenu from "./Navigation/Navmenu";
-import Home from "./Home";
+import "bootstrap/dist/css/bootstrap.min.css";
+import NavBar from "./components/NavBar";
+import Home from "./components/Home";
 import Profile from "./components/Profile";
-import Skills from './components/Skills';
-import Projects from './components/Project';
+import Skills from "./components/Skills";
+import Projects from "./components/Project";
+import Contact from "./components/Contact";
 
 function App() {
   return (
-    <div>
-      {/* <BrowserRouter>
-        <NavMenu />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/hyunjung" element={<Profile />} />
-          <Route path="/skills" element={<Skills/>} />
-          <Route path="/projects" element={<Projects/>} />
-        </Routes>
-      </BrowserRouter> */}
-      <NavMenu />
+    <>
+      <NavBar />
       <Home />
-      <Profile/>
+      <Profile />
       <Skills />
       <Projects />
-    </div>
+      <Contact />
+    </>
   );
 }
 
