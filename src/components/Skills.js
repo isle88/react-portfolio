@@ -2,8 +2,8 @@ import React from "react";
 
 const Skills = () => {
   return (
-    <div>
-      <h1 style={{fontStyle: "italic"}}>Skills</h1>
+    <div id="skills" style={{ height: "100vh" }}>
+      <h1 style={{ fontStyle: "italic" }}>Skills</h1>
       <p>FrontEnd</p>
       <img
         src="https://img.icons8.com/color/48/000000/javascript--v1.png"
@@ -30,7 +30,10 @@ const Skills = () => {
         src="https://img.icons8.com/color/48/000000/mongodb.png"
         alt="mongo_db_logo"
       />
-      <img src="https://img.icons8.com/color/48/000000/sql.png" alt='sql_logo'/>
+      <img
+        src="https://img.icons8.com/color/48/000000/sql.png"
+        alt="sql_logo"
+      />
     </div>
   );
 };
