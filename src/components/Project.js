@@ -1,15 +1,13 @@
 import React from "react";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
-import Card from "react-bootstrap/Card";
+import { Col, Row, Card } from "react-bootstrap";
 import projects from "../data";
 
 const Projects = () => {
   return (
-    <>
+    <div id="projects">
       <h1 style={{ fontStyle: "italic" }}>Projects</h1>
       <div>
-        <Row xs={1} md={3} className="g-4">
+        <Row xs={1} md={2} lg={3} className="g-4">
           {projects.map((project) => {
             return (
               <a
@@ -40,7 +38,7 @@ const Projects = () => {
           })}
         </Row>
       </div>
-    </>
+    </div>
   );
 };
 
