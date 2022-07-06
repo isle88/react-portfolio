@@ -1,0 +1,14 @@
+.padding {
+  padding-top: 40vh;
+  height: 100vh;
+}
+
+.text {
+  text-align: center;
+}
+
+.arrow {
+    position: absolute;
+    bottom: 5vh;
+    margin: 0;
+}

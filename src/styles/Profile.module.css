@@ -1,0 +1,32 @@
+.padding {
+  padding-top: 20vh;
+  height: 100vh;
+}
+
+.text {
+  text-align: center;
+}
+
+.title {
+  margin-top: 5vh;
+}
+
+.body {
+    margin: 10vh 0;
+    font-size: x-large;
+}
+
+
+.svg {
+    text-decoration: none;
+    color: black;
+    margin: 2vh 1vh;
+  }
+  
+
+.arrow {
+  position: absolute;
+  bottom: -95vh;
+  margin: 0;
+}
+
