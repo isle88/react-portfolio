@@ -1,0 +1,25 @@
+.padding {
+  padding-top: 15vh;
+  height: 100vh;
+}
+
+.margin {
+  margin: 5vh 30vh;
+}
+
+.title {
+  text-align: center;
+}
+
+.up {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+@media only screen and (max-width: 425px) {
+  .margin {
+    margin: 2vh 5vh;
+  }
+}
