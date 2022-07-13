@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowDown, Github, Linkedin } from "react-bootstrap-icons";
+import { ChevronDown, Github, Linkedin } from "react-bootstrap-icons";
 import styles from "../styles/Profile.module.css";
 
 const Profile = () => {
@@ -7,7 +7,7 @@ const Profile = () => {
     <div id="profile" className={`${styles.padding} ${styles.text}`}>
       <h2 className={styles.title}>Hi! My name is Hyunjung Kim</h2>
       <div className={styles.body}>
-        <p>I graduated Northcoders' Bootcamp in March 2022</p>
+        <p>I graduated Northcoders' bootcamp in 2022</p>
         <p>I'm excited for you to see my portfolio!</p>
         <p>Please check out also my Github and LinkedIn</p>
       </div>
@@ -22,9 +22,11 @@ const Profile = () => {
           <Linkedin color="black" size={48} className={styles.svg} />
         </a>
       </div>
+      <div className={styles.down} >
       <a href="#skills">
-        <ArrowDown color="grey" size={25} className={styles.arrow} />
+        <ChevronDown color="grey" size={25} />
       </a>
+      </div>
     </div>
   );
 };
