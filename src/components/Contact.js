@@ -1,6 +1,8 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Button, Form, Modal } from "react-bootstrap";
+import { ChevronDoubleUp } from "react-bootstrap-icons";
+import styles from "../styles/Contact.module.css";
 
 const SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
 const TEMPLATE_ID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
@@ -51,61 +53,73 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" style={{ height: "100vh" }}>
-      <h1>Contact page</h1>
-      <Form ref={form} onSubmit={sendEmail}>
-        <Form.Group className="mb-3" controlId="name">
-          <Form.Label>Name</Form.Label>
-          <Form.Control
-            type="text"
-            name="user_name"
-            placeholder="Enter your name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-          />
-        </Form.Group>
-        <Form.Group className="mb-3" controlId="email">
-          <Form.Label>Email address</Form.Label>
-          <Form.Control
-            type="email"
-            name="user_email"
-            placeholder="Enter email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
-        </Form.Group>
-        <Form.Group className="mb-3" controlId="message">
-          <Form.Label>Message</Form.Label>
-          <Form.Control
-            as="textarea"
-            rows={5}
-            type="text"
-            name="message"
-            placeholder="Please write your message"
-            value={formData.message}
-            onChange={handleChange}
-            required
-          />
-        </Form.Group>
-        <Button variant="light" type="submit" size="sm" onClick={handleShow}>
-          Submit
-        </Button>
-      </Form>
-      <Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
-          <Modal.Title>{alert.title}</Modal.Title>
-        </Modal.Header>
-        {/* <Modal.Title>Thank you</Modal.Title> */}
-        <Modal.Body>{alert.body}</Modal.Body>
-        {/* <Modal.Body>I will reply your message soon :)</Modal.Body> */}
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-        </Modal.Footer>
-      </Modal>
+    <div id="contact" className={styles.padding}>
+      <h3 className={styles.title}>Contact me 📧</h3>
+      <div className={styles.margin}>
+        <Form ref={form} onSubmit={sendEmail}>
+          <Form.Group className="mb-3" controlId="name">
+            <Form.Label>Name</Form.Label>
+            <Form.Control
+              type="text"
+              name="user_name"
+              placeholder="Enter your name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+            />
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="email">
+            <Form.Label>Email address</Form.Label>
+            <Form.Control
+              type="email"
+              name="user_email"
+              placeholder="Enter email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="message">
+            <Form.Label>Message</Form.Label>
+            <Form.Control
+              as="textarea"
+              rows={5}
+              type="text"
+              name="message"
+              placeholder="Please write your message"
+              value={formData.message}
+              onChange={handleChange}
+              required
+            />
+          </Form.Group>
+          <div className="d-flex justify-content-center">
+            <Button
+              variant="light"
+              type="submit"
+              size="sm"
+              onClick={handleShow}
+            >
+              Submit
+            </Button>
+          </div>
+        </Form>
+        <Modal show={show} onHide={handleClose}>
+          <Modal.Header closeButton>
+            <Modal.Title>{alert.title}</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>{alert.body}</Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={handleClose}>
+              Close
+            </Button>
+          </Modal.Footer>
+        </Modal>
+      </div>
+      <div className={styles.up}>
+        <a href="#home">
+          <ChevronDoubleUp color="grey" size={25} />
+        </a>
+      </div>
     </div>
   );
 };
