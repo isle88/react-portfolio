@@ -7,8 +7,9 @@
   text-align: center;
 }
 
-.arrow {
-    position: absolute;
-    bottom: 5vh;
-    margin: 0;
+.down {
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
