@@ -10,7 +10,7 @@ const projects = [
   {
     title: "React My Store",
     stack: "React, React Bootstrap",
-    description: "basic e-commerce webpage",
+    description: "e-commerce webpage",
     image: "/asset/img/1.png",
     link: "https://react-mystore-h.netlify.app/",
   },

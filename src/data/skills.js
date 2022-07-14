@@ -33,14 +33,14 @@ const skills = {
       description: "nodejs logo",
     },
     {
-      name: "MongoDB",
-      image: "https://img.icons8.com/color/48/000000/mongodb.png",
-      description: "mongodb logo",
-    },
-    {
       name: "SQL",
       image: "https://img.icons8.com/color/48/000000/sql.png",
       description: "sql logo",
+    },
+    {
+      name: "MongoDB",
+      image: "https://img.icons8.com/color/48/000000/mongodb.png",
+      description: "mongodb logo",
     },
   ],
   deployment: [
