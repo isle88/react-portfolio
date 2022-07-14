@@ -1,18 +1,32 @@
-.padding {
-  padding-top: 20vh;
-  height: 100vh;
-}
-
-.text {
+.layout {
+  padding-top: 15vh;
   text-align: center;
+  vertical-align: middle;
 }
 
 .title {
-  margin: 3vh;
+  margin-top: 5vh;
 }
 
-.arrow {
-  position: absolute;
-  bottom: -190vh;
-  margin: 0;
+.container {
+  height: 280px;
+  padding: 20px 30px;
+  margin: 0 30px;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+.down {
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 425px) {
+  .title,
+  .body {
+    font-size: larger;
+  }
 }
