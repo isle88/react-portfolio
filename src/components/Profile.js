@@ -4,7 +4,7 @@ import styles from "../styles/Profile.module.css";
 
 const Profile = () => {
   return (
-    <div id="profile" className={`${styles.padding} ${styles.text}`}>
+    <div id="profile" className={styles.layout}>
       <h2 className={styles.title}>Hi! My name is Hyunjung Kim</h2>
       <div className={styles.body}>
         <p>I graduated Northcoders' bootcamp in 2022</p>

@@ -1,21 +1,17 @@
-.padding {
+.layout {
   padding-top: 10vh;
   height: 100vh;
-}
-
-.text {
   text-align: center;
 }
 
 .title {
-  margin-top: 5vh;
+  margin: 5vh 0;
 }
 
 .body {
     margin: 8vh 0;
     font-size: larger;
 }
-
 
 .svg {
     text-decoration: none;

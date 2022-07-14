@@ -4,7 +4,7 @@ import { ChevronDown } from "react-bootstrap-icons";
 
 const Home = () => {
   return (
-    <div id="home" className={`${styles.padding} ${styles.text}`}>
+    <div id="home" className={styles.layout}>
       <h1>Hello World! 🙋‍♀️</h1>
       <h1>🕊 Welcome to My Portfolio 🦥 </h1>
       <div className={styles.down}>
