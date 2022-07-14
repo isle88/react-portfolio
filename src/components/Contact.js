@@ -38,7 +38,7 @@ const Contact = () => {
         });
         setAlert({
           title: "Thank you 🙂",
-          body: "I will reply your message soon",
+          body: "I will reply to your message soon",
         });
         setShow(true);
       },
