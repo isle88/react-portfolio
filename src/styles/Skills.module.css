@@ -1,5 +1,5 @@
 .layout {
-  padding-top: 25vh;
+  padding-top: 20vh;
   text-align: center;
   vertical-align: middle;
 }
@@ -9,9 +9,10 @@
 }
 
 .container {
-  height: 280px;
-  padding: 20px 30px;
-  margin: 30px 30px;
+  min-height: 280px;
+  min-width: 280px;
+  padding: 20px 10px;
+  margin: 50px 10px;
   border: 1px solid grey;
   border-radius: 10px;
 }
@@ -29,8 +30,10 @@
   body {
     font-size: larger;
   }
-  .layout,
+  .layout {
+    padding-top: 6vh;
+  }
   .title {
-    padding-top: 2vh;
+    margin-top: 3vh;
   }
 }
