@@ -12,7 +12,7 @@ const Skills = () => {
     <div id="skills" className={styles.layout}>
       <Container>
         <Row>
-          <Col sm>
+          <Col lg>
             <div>
               <h2 className={styles.title}>FrontEnd</h2>
               <div className={styles.container}>
