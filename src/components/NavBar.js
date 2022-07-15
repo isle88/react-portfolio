@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Nav, Navbar, Offcanvas } from "react-bootstrap";
 
 const NavBar = () => {
   const expand = "sm";
+  const [expanded, setExpanded] = useState(false);
+
   return (
     <>
       <Navbar
@@ -11,28 +13,30 @@ const NavBar = () => {
         bg="light"
         expand={expand}
         className="mb-3"
+        expanded={expanded}
       >
         <Container fluid>
           <Navbar.Brand href="#profile">Hyunjung Kim</Navbar.Brand>
-          <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
-          <Navbar.Offcanvas
-            id={`offcanvasNavbar-expand-${expand}`}
-            aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
-            placement="top"
-          >
-            <Offcanvas.Header
-              className="ms-auto"
-              closeButton
-            ></Offcanvas.Header>
-            <Offcanvas.Body>
-              <Nav className="justify-content-end flex-grow-1 pe-3">
-                <Nav.Link href="#home">HOME</Nav.Link>
-                <Nav.Link href="#skills">SKILLS</Nav.Link>
-                <Nav.Link href="#projects">PROJECTS</Nav.Link>
-                <Nav.Link href="#contact">CONTACT</Nav.Link>
-              </Nav>
-            </Offcanvas.Body>
-          </Navbar.Offcanvas>
+          <Navbar.Toggle
+            aria-controls="basic-navbar-nav"
+            onClick={() => setExpanded(expanded ? false : "expanded")}
+          />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="justify-content-end flex-grow-1 pe-3">
+              <Nav.Link href="#home" onClick={() => setExpanded(false)}>
+                HOME
+              </Nav.Link>
+              <Nav.Link href="#skills" onClick={() => setExpanded(false)}>
+                SKILLS
+              </Nav.Link>
+              <Nav.Link href="#projects" onClick={() => setExpanded(false)}>
+                PROJECTS
+              </Nav.Link>
+              <Nav.Link href="#contact" onClick={() => setExpanded(false)}>
+                CONTACT
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
         </Container>
       </Navbar>
     </>
