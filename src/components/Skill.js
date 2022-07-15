@@ -2,7 +2,6 @@ import React from "react";
 import skills from "../data/skills";
 import PropTypes from "prop-types";
 import { Col } from "react-bootstrap";
-import Skills from "./Skills";
 
 const Skill = ({ title, container }) => {
   return (
