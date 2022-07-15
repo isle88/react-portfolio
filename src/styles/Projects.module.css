@@ -30,13 +30,19 @@
 }
 
 .image {
-    padding: 20px;
+  padding: 20px;
 }
 
 .down {
-  margin-top: 7vh;
+  margin-top: 10vh;
   display: flex;
   justify-content: center;
   text-align: center;
   align-items: center;
+}
+
+@media only screen and (max-width: 425px) {
+  .title {
+    margin: 1vh;
+  }
 }
