@@ -1,10 +1,14 @@
 .layout {
-  padding-top: 20vh;
+  padding-top: 15vh;
   text-align: center;
   vertical-align: middle;
 }
 
 .title {
+  margin-top: 3vh;
+}
+
+.subTitle {
   margin-top: 5vh;
 }
 
@@ -18,7 +22,7 @@
 }
 
 .down {
-  margin-top: 15vh;
+  margin-top: 5vh;
   display: flex;
   justify-content: center;
   text-align: center;

@@ -7,11 +7,12 @@ import Skill from "./Skill";
 const Skills = () => {
   return (
     <div id="skills" className={styles.layout}>
+          <h3 className={styles.title}>Skills</h3>
       <Container >
         <Row lg={4} md={2} xs={1} >
           <>
             <Skill
-              title={styles.title}
+              subTitle={styles.subTitle}
               container={styles.container}
               border={styles.border}
             />

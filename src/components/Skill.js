@@ -3,14 +3,14 @@ import skills from "../data/skills";
 import PropTypes from "prop-types";
 import { Col } from "react-bootstrap";
 
-const Skill = ({ title, container }) => {
+const Skill = ({ subTitle, container }) => {
   return (
     <>
       {skills.map((category, index) => {
         return (
           <Col key={index}>
             <div>
-              <h3 className={title}>{category.title}</h3>
+              <h4 className={subTitle}>{category.title}</h4>
               <div className={container}>
                 {category.skill.map((data, index) => {
                   return (

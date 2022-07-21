@@ -7,7 +7,7 @@ const Profile = () => {
     <div id="profile" className={styles.layout}>
       <h2 className={styles.title}>Hi, My name is Hyunjung Kim 👋 </h2>
       <div className={styles.body}>
-        <p>I graduated Northcoders' bootcamp in 2022</p>
+        <p>I graduated from Northcoders Bootcamp in 2022</p>
         <p>I'm excited for you to see my portfolio!</p>
         <p>Please check out also my Github and LinkedIn</p>
       </div>
